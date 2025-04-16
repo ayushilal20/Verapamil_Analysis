@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository provides a comprehensive analysis of **verapamil's mechanism of action in pancreatic beta cells**, with a focus on its impact on gene expression, pathway enrichment, and gene co-expression network topology. The project integrates transcriptomic data, functional enrichment (GO, KEGG, Reactome, WikiPathways), and network analysis to elucidate how verapamil modulates beta cell biology. The analysis framework adapts the structure of the [Amiloride Drug MOA study](https://github.com/evanpeikon/Amilioride_Drug_MOA), to amalyze the impacct of Verapamil on pancreatic beta-cell function.
+This repository provides a comprehensive analysis of **verapamil's mechanism of action in pancreatic beta cells**, focusing on its impact on gene expression, pathway enrichment, and gene co-expression network topology. The project integrates transcriptomic data, functional enrichment (GO, KEGG, Reactome, WikiPathways), and network analysis to elucidate how verapamil modulates beta cell biology. The analysis framework adapts the structure of the [Amiloride Drug MOA study](https://github.com/evanpeikon/Amilioride_Drug_MOA) to analyze the impact of Verapamil on pancreatic beta-cell function.
 
 ## Background
 
@@ -58,9 +58,9 @@ WGCNA-style co-expression networks were constructed using:
 ### 🔗 **Hub Gene Rewiring**
 | Condition        | Top Hub Genes                             |
 |------------------|-------------------------------------------|
-| Verapamil        | Cyp51, Insig1, Mfsd2a, Slc38a3, Kdr, Atf4 |
-| Control          | Hmgcr, Dhcr7, Mafb, Mest, Acss2, Plk3     |
-| Common           | Atf4                                      |
+| Verapamil        | Insig1, Hmgcs1, Tmem215, Slc38a3, Stc1, Psat1, Chac1, Mfsd2a|
+| Control          | Dhcr7, St8sia2, Plk3, Gabrq, Wnt4, Acss2, Sdf2l1, Parvb|
+| Common           | Atf4, Hmgcr                                    |
 
 ### 📈 **Top Enriched Pathways**
 - **Insulin secretion** (KEGG, GO)
@@ -74,6 +74,13 @@ WGCNA-style co-expression networks were constructed using:
 - **Lipid Metabolism Rewiring**: Verapamil suppresses canonical HMGCR-driven cholesterol synthesis in favor of Insig1 and Cyp51.
 - **Stress Adaptation**: Atf4 appears as a conserved stress hub.
 - **Loss of Proliferative Signals**: Control hubs (Plk3, Mafb) vanish in Verapamil network, indicating G2/M phase arrest.
+
+## Discussion
+### Mechanistic Insights
+- **Lipid Metabolism**: Verapamil suppresses canonical cholesterol synthesis (*HMGCR*) while upregulating *INSIG1* (SREBP inhibitor) and *CYP51*, potentially reducing ER stress.
+- **Network Modularity**: Increased specialization (6 communities vs. 7 in control) may enhance resilience against metabolic stress.
+- **Therapeutic Potential**: *ATF4* retention as a shared hub highlights conserved stress-response pathways critical for β-cell survival.
+
 
 ## ⚠️ Limitations
 - DEG-based network inference excludes genes with moderate changes.
