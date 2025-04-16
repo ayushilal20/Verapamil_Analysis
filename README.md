@@ -15,7 +15,7 @@ Verapamil is a clinically approved L-type calcium channel blocker. Recent studie
 ## 📂 Data Source
 The dataset used is from **GEO accession [GSE230803](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE230803)** containing the precomputed differential expression result table for:
 - **12 Verapamil-treated samples (V1-V12)**
-- **12 Control samples (C1-C12)**\
+- **12 Control samples (C1-C12)**
 
 Note: Given the substantial storage and computational requirements of the raw sequencing data in GSE230803, this analysis leverages the publicly available differential expression results provided by the original authors, instead of reconstructing the count matrix from raw FASTQ files.
 
