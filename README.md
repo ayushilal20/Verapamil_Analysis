@@ -52,8 +52,8 @@ WGCNA-style co-expression networks were constructed using:
 - **Verapamil network**: Lower density (0.244) and degree (avg. 24.1)
 - **Control network**: Higher density (0.374), avg. degree (37.0)
 - **Modularity**: Higher in Verapamil (0.428 vs. 0.179) → more compartmentalized
-  - Near-complete replacement of hub genes, with only ATF4 (a stress-response regulator) conserved between conditions
-  - Emergence of new hubs (e.g., INSIG1, CYP51, SLC38A3) related to lipid metabolism, stress response, and membrane transport
+- Near-complete replacement of hub genes, with only ATF4 (a stress-response regulator) conserved between conditions
+- Emergence of new hubs (e.g., INSIG1, CYP51, SLC38A3) related to lipid metabolism, stress response, and membrane transport
 
 ### 🔗 **Hub Gene Rewiring**
 | Condition        | Top Hub Genes                             |
