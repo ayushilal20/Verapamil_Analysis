@@ -13,7 +13,7 @@ Verapamil is a clinically approved L-type calcium channel blocker. Recent studie
 - **Gene co-expression network rewiring**
 
 ## 📂 Data Source
-The dataset used is from **GEO accession [GSE230803](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE230803)** containing the precomputed differential expression result table for:
+The dataset used is from **GEO accession [GSE230803]([https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE230803]** containing the precomputed differential expression result table for:
 - **12 Verapamil-treated samples (V1-V12)**
 - **12 Control samples (C1-C12)**
 I couldn't start from creating the count matrix since the sample size was too big.
