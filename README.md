@@ -57,8 +57,7 @@ WGCNA-style co-expression networks were constructed using:
 - Emergence of new hubs (e.g., INSIG1, CYP51, SLC38A3) related to lipid metabolism, stress response, and membrane transport
 
 ![Co-expression Network](Output/co-expression%20network.png)
-
-
+![Network Communities](Output/communities.png)
 
 ### 🔗 **Hub Gene Rewiring**
 | Condition        | Top Hub Genes                             |
@@ -67,6 +66,8 @@ WGCNA-style co-expression networks were constructed using:
 | Control          | Dhcr7, St8sia2, Plk3, Gabrq, Wnt4, Acss2, Sdf2l1, Parvb|
 | Common           | Atf4, Hmgcr                                    |
 
+![Hub Genes Network](Output/hub%20genes.png)
+
 ### 📈 **Top Enriched Pathways**
 - **Insulin secretion** (KEGG, GO)
 - **Steroid/cholesterol biosynthesis** (KEGG, GO, Reactome)
@@ -74,6 +75,8 @@ WGCNA-style co-expression networks were constructed using:
 - **Ion channel signaling** (GABA-A, sodium, potassium)
 - **Neuronal-like signaling** (dopaminergic synapse, nicotine addiction)
  - Key genes: **INSIG1, CYP51, HMGCR, SLC38A3, ATF4**
+
+![Top Enriched Terms (Multiple Databases)](Output/combined_enrichment.png)
 
 ### 🧬 **Biological Implications**
 - **Lipid Metabolism Rewiring**: Verapamil suppresses canonical HMGCR-driven cholesterol synthesis in favor of Insig1 and Cyp51.
