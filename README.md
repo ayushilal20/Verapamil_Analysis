@@ -16,7 +16,8 @@ Verapamil is a clinically approved L-type calcium channel blocker. Recent studie
 The dataset used is from **GEO accession [GSE230803](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE230803)** containing the precomputed differential expression result table for:
 - **12 Verapamil-treated samples (V1-V12)**
 - **12 Control samples (C1-C12)**\
-I couldn't start from creating the count matrix since the sample size was too big.
+
+Note: Given the substantial storage and computational requirements of the raw sequencing data in GSE230803, this analysis leverages the publicly available differential expression results provided by the original authors, instead of reconstructing the count matrix from raw FASTQ files.
 
 ## 🧪 Analysis Overview
 
@@ -76,11 +77,32 @@ WGCNA-style co-expression networks were constructed using:
 - **Loss of Proliferative Signals**: Control hubs (Plk3, Mafb) vanish in Verapamil network, indicating G2/M phase arrest.
 
 ## Discussion
-### Mechanistic Insights
-- **Lipid Metabolism**: Verapamil suppresses canonical cholesterol synthesis (*HMGCR*) while upregulating *INSIG1* (SREBP inhibitor) and *CYP51*, potentially reducing ER stress.
-- **Network Modularity**: Increased specialization (6 communities vs. 7 in control) may enhance resilience against metabolic stress.
-- **Therapeutic Potential**: *ATF4* retention as a shared hub highlights conserved stress-response pathways critical for β-cell survival.
+The analysis revealed that verapamil significantly impacts beta-cell biology by modulating cholesterol biosynthesis, cell cycle progression, neuronal-like ion channel signaling, and ER stress pathways. Notably, verapamil shifted beta-cell regulatory hubs toward lipid metabolism regulators such as Insig1 and Cyp51, reducing lipid-induced stress and enhancing cellular resilience through structural reorganization into specialized functional modules. While its inhibition of proliferation pathways raises concerns about long-term beta-cell mass maintenance, this effect is contextually less critical in diabetes, where stress resilience and functional preservation are prioritized. Verapamil’s dual action—network rewiring to optimize lipid metabolism/stress responses and calcium channel blockade to reduce TXNIP-driven apoptosis—creates a favorable therapeutic window despite potential anti-proliferative effects. Further studies in diabetic models are needed to optimize dosing and timing for clinical translation.
 
+## References
+1. **Verapamil and beta cell function in adults with recent-onset type 1 diabetes**  
+   [PMC6092963](https://pmc.ncbi.nlm.nih.gov/articles/PMC6092963/)
+
+2. **A novel class of oral, non-immunosuppressive, beta cell-targeting drugs for diabetes**  
+   [Frontiers in Endocrinology, 2024](https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2024.1476444/full)
+
+3. **Verapamil Increases the Apolipoprotein-Mediated Release of Cellular Lipid and HDL Production**  
+   [AHA Journals, 2004](https://www.ahajournals.org/doi/10.1161/01.atv.0000117178.94087.ba)
+
+4. **1761-P: Verapamil Increases β-Cell Proliferation in MIN6 Cells and Zebrafish**  
+   [Diabetes Journals, 2023](https://diabetesjournals.org/diabetes/article/72/Supplement_1/1761-P/151003/1761-P-Verapamil-Increases-Cells-Proliferation-in)
+
+5. **IU diabetes researchers discover new use for high blood pressure drug**  
+   [Indiana University School of Medicine News, 2023](https://medicine.iu.edu/news/2023/03/clver-diabetes-clinical-trial)
+
+6. **Investigating the effect of verapamil on preservation of beta-cell function in type 1 diabetes**  
+   [BMJ Open, 2024](https://bmjopen.bmj.com/content/14/11/e091597)
+
+7. **TXNIP inhibitors: A New Class of Agents for Diabetes Treatment**  
+   [Pharmacy Times, 2021](https://www.pharmacytimes.com/view/txnip-inhibitors-a-new-class-of-agents-for-diabetes-treatment)
+
+8. **Verapamil Slows Type 1 Diabetes Progression in Newly Diagnosed Children and Teens**  
+   [Breakthrough T1D, 2023](https://www.breakthrought1d.org/news-and-updates/verapamil-slows-type-1-diabetes-progression-newly-diagnosed-children-and-teens/)
 
 ## ⚠️ Limitations
 - DEG-based network inference excludes genes with moderate changes.
